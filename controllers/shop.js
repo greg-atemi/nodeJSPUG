@@ -38,6 +38,15 @@ exports.getCart = (req, res, next) => {
                             });
 }
 
+exports.getOrders = (req, res, next) => {
+    res.render('shop/orders', { pageTitle: 'Orders',
+                                path: '/shop/orders',
+                                formsCSS: true,
+                                activeAddProduct: true,
+                                productCSS: true
+                            });
+}
+
 exports.getCheckout = (req, res, next) => {
     res.render('shop/checkout', { pageTitle: 'Checkout',
                                 path: '/shop/checkout',
