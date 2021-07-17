@@ -1,4 +1,4 @@
-<%- include('components/head.ejs') %>
+<%- include('../components/head.ejs') %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <%- include('components/navBar.ejs') %>
+    <%- include('../components/navBar.ejs') %>
 
     <main>
         <% if (prods.length > 0) { %>
@@ -39,4 +39,5 @@
             <h1>No Products Found</h1>
         <% } %>            
     </main>
-<%- include('components/end.ejs') %>
+</body>
+<%- include('../components/end.ejs') %>
